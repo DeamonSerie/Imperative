@@ -1,0 +1,16 @@
+[package]
+name = "net"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+core = { path = "../core" }
+crypto = { path = "../crypto" }
+smol = { workspace = true }
+futures = { workspace = true }
+serde = { workspace = true }
+postcard = { workspace = true }
+bytes = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

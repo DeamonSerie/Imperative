@@ -1,0 +1,12 @@
+[package]
+name = "dht"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+core = { path = "../core" }
+crypto = { path = "../crypto" }
+net = { path = "../net" }
+rnt = { path = "../rnt" }
+serde = { workspace = true }

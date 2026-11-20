@@ -1,0 +1,42 @@
+[workspace]
+resolver = "2"
+members = [
+    "core",
+    "crypto",
+    "net",
+    "tower",
+    "stream",
+    "dht",
+    "rnt",
+    "consensus",
+    "rules",
+    "bot",
+    "telemetry",
+    "chain-hooks",
+    "cli",
+]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+postcard = { version = "1", features = ["alloc"] }
+ripemd = "0.1"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+x25519-dalek = "2"
+chacha20poly1305 = "0.10"
+hmac = "0.12"
+smol = "2"
+futures = "0.3"
+sysinfo = "0.30"
+toml = "0.8"
+clap = { version = "4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+bytes = "1"
+thiserror = "1"
+anyhow = "1"
+rand = "0.8"
